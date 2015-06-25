@@ -2,9 +2,11 @@
 ## extract monthly climate values for mollugo points and for all other months and years at each location
 
 rm(list=ls())
-setwd('/Users/david/Documents/Projects/BerkeleyLab/Postdocs/Hereford/climate_data_2015/')
+setwd('/Users/david/Documents/Projects/BerkeleyLab/Postdocs/Hereford/climate_data_2015/mollugo_git/')
 require(raster)
-#source('xMonthly.R')
+require(sp)
+require(rgeos)
+source('xMonthly.R')
 
 ## create character and numeric month vectors
 smonths <- c('jan','feb','mar','apr','may','jun','jul','aug','sep','oct','nov','dec')
