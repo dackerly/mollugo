@@ -60,7 +60,6 @@ plot(mpts.aea,add=T)
 mv$soil_thick <- extract(st,mpts.aea)
 head(mv)
 
-
 # which ones are missing soil thickness - these need to be checked if they are placed in the water
 missing.soil <- which(is.na(mv$soil_thick))
 mv$SPECIMEN[missing.soil]
